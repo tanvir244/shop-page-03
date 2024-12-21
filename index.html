@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page - 3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="min-h-full py-8 bg-[#F4F4F4]">
+        <!-- section title and description -->
+        <div class="w-[90%] md:w-[80%] lg:w-[1600px] mx-auto flex items-center gap-2">
+            <img class="w-6 text-[#192434]" src="https://i.ibb.co.com/LdFLr4h/shop-page-7.png" alt="">
+            <span class="text-xl">/</span>
+            <span class="text-lg text-[#192434]">Shop</span>
+        </div>
+        <div class="text-center text-[#192434] space-y-6 mt-16 mb-12">
+            <h2 class="text-4xl font-bold">Shop All</h2>
+            <p class="text-lg">Discover a Place Where Fashion Meets Passion</p>
+        </div>
+        <!-- Swiper -->
+        <div #swiperRef="" class="swiper mySwiper w-[90%] md:w-[80%] lg:w-[1600px] h-[390px] mx-auto">
+            <div class="swiper-wrapper h-[390px] mb-8">
+                <div class="swiper-slide rounded-3xl relative"
+                    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 55%), url('https://i.ibb.co.com/qBd9FDs/shop-page-14.png'); background-size: cover; background-repeat: no-repeat;">
+                    <div class="absolute bottom-6 left-8 text-white flex gap-20 md:gap-1 lg:gap-20">
+                        <div>
+                            <h3 class="text-3xl">Pants</h3>
+                            <p class="text-base text-start">16 items</p>
+                        </div>
+                        <div class="w-14 h-14">
+                            <img class="w-full h-full" src="https://i.ibb.co.com/VJmQxK8/shop-page-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded-3xl relative"
+                    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 55%), url('https://i.ibb.co.com/vDdThCD/shop-page-2.png'); background-size: cover; background-repeat: no-repeat;">
+                    <div class="absolute bottom-6 left-8 text-white flex gap-20">
+                        <div>
+                            <h3 class="text-3xl">Shows</h3>
+                            <p class="text-base text-start">33 items</p>
+                        </div>
+                        <div class="w-14 h-14">
+                            <img class="w-full h-full" src="https://i.ibb.co.com/VNb6pzf/shop-page-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded-3xl relative"
+                    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 55%), url('https://i.ibb.co.com/xMCkqLp/shop-page-9.png'); background-size: cover; background-repeat: no-repeat;">
+                    <div class="absolute bottom-6 left-8 text-white flex gap-14">
+                        <div>
+                            <h3 class="text-3xl">Watches</h3>
+                            <p class="text-base text-start">52 items</p>
+                        </div>
+                        <div class="w-14 h-14">
+                            <img class="w-full h-full" src="https://i.ibb.co.com/VNb6pzf/shop-page-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded-3xl relative"
+                    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 55%), url('https://i.ibb.co.com/Jr8HLM4/shop-page-8.png'); background-size: cover; background-repeat: no-repeat;">
+                    <div class="absolute bottom-6 left-8 text-white flex gap-12">
+                        <div>
+                            <h3 class="text-3xl">Sweaters</h3>
+                            <p class="text-base text-start">31 items</p>
+                        </div>
+                        <div class="w-14 h-14">
+                            <img class="w-full h-full" src="https://i.ibb.co.com/VNb6pzf/shop-page-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded-3xl relative"
+                    style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 55%), url('https://i.ibb.co.com/gmp5BPM/shop-page-11.png'); background-size: cover; background-repeat: no-repeat;">
+                    <div class="absolute bottom-6 left-8 text-white flex gap-24">
+                        <div>
+                            <h3 class="text-3xl">Bags</h3>
+                            <p class="text-base text-start">49 items</p>
+                        </div>
+                        <div class="w-14 h-14">
+                            <img class="w-full h-full" src="https://i.ibb.co.com/VNb6pzf/shop-page-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- border bottom  -->
+        <div class="w-[90%] md:w-[80%] lg:w-[1600px] mx-auto border-b-4 border-[#dfe1e6] pt-16"></div>
+
+        <!-- multiple carts section -->
+        <div class="w-[90%] md:w-[80%] lg:w-[1600px] mx-auto my-16 flex gap-8 justify-between relative">
+            <!-- left contents -->
+            <div class="hidden lg:block bg-white w-[100%] md:w-[400px] p-12 rounded-2xl">
+                <!-- Product Type -->
+                <div class="flex justify-between items-center text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Product Type</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <input class="border-2 border-[#d6dce1] text-[#d6dce1] w-full p-4 rounded-xl my-8 text-lg" type="text"
+                    placeholder="Find a category">
+                <div class="space-y-4 max-h-60 overflow-y-auto pb-2 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Accessories (21)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Bags (49)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Goods (47)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Pants (16)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Shoes (33)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Sweaters (19)</p>
+                    </div>
+                </div>
+                <!-- Price -->
+                <div class="flex justify-between mt-14 mb-4 items-center text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Price</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <input type="range" class="w-full" min="0" max="100">
+                <div class="flex justify-between border-b-4 border-[#d6dce1] pt-4 pb-6">
+                    <input class="w-[42%] border border-[#d6dce1] p-2 rounded text-base font-semibold" type="number"
+                        name="" id="" placeholder="0">
+                    <span class="text-[#192434] text-lg">To</span>
+                    <input class="w-[42%] border border-[#d6dce1] p-2 rounded text-base font-semibold" type="number"
+                        name="" id="" placeholder="3000">
+                </div>
+                <!-- Size -->
+                <div class="flex justify-between items-center mt-10 mb-2 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Size</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <div class="space-y-4 pb-6 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">S (86)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">M (33)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">L (37)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">XL (29)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">XXL (32)</p>
+                    </div>
+                </div>
+                <!-- Product Status -->
+                <div class="flex justify-between items-center mt-10 mb-2 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Product Status</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <div class="space-y-4 pb-6 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">In stock</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Out of stock</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">On sale</p>
+                    </div>
+                </div>
+                <!-- Average Ratings -->
+                <div class="flex justify-between items-center mt-10 mb-2 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Average Ratings</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <div class="space-y-4 pb-6 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <div class="flex items-center gap-2">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <span class="pl-4 text-lg">5</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <div class="flex items-center gap-2">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/T8ymnKp/shop-page-12.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/T8ymnKp/shop-page-12.png" alt="">
+                            <span class="pl-4 text-lg">3 & up</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Brand -->
+                <div class="flex justify-between items-center mt-10 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Brand</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <input class="border-2 border-[#d6dce1] text-[#d6dce1] w-full p-4 mt-2 rounded-xl text-lg" type="text"
+                    placeholder="Find a category">
+                <img class="mt-6" src="https://i.ibb.co.com/DYCQFXD/shop-page-10.png" alt="">
+
+            </div>
+            <!-- right contents -->
+            <div id="cart_section" class="w-[100%] lg:w-[1315px]">
+                <img id="open_slide_bar" class="w-6 mb-4 block lg:hidden" src="https://i.ibb.co.com/Tg0fLx3/left-arrow.png" alt="">
+                <div class="flex flex-col lg:flex-row lg:justify-between">
+                    <div class="flex flex-col lg:flex-row gap-8 items-center">
+                        <div class="w-[260px] bg-white text-base rounded-2xl px-6 py-4">
+                            <label class="" for="">Default Sorting:</label>
+                            <select name="" id="">
+                                <option value="">Sorting 1</option>
+                                <option value="">Sorting 2</option>
+                            </select>
+                        </div>
+                        <div class="flex gap-4">
+                            <img class="object-cover cursor-pointer" src="https://i.ibb.co.com/bmS04J3/event-list.png" alt="">
+                            <img class="object-cover cursor-pointer" src="https://i.ibb.co.com/tLk02KQ/shop-page-icon-4.png" alt="">
+                            <img class="object-cover cursor-pointer" src="https://i.ibb.co.com/6Fp9Ksd/shop-page-icon-2.png" alt="">
+                            <img class="object-cover cursor-pointer" src="https://i.ibb.co.com/DG9PDnh/shop-page-icon-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center mt-8 lg:mt-0 mx-auto lg:mx-0">
+                        <span class="text-xl text-[#192434]">Show</span>
+                        <div class="w-[110px] bg-white text-base rounded-2xl px-6 py-4">
+                            <label class="" for="">06</label>
+                            <select name="" id="">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 my-10 border-b-4 gap-6 border-[#c4cbd3] pb-12">
+                    <div class="flex flex-col lg:flex-row items-center gap-4 p-6 md:pt-10 rounded-3xl bg-white">
+                        <div class="w-full md:w-[520px] lg:w-[695px] h-full">
+                            <img class="w-full h-full rounded-3xl object-cover" src="https://i.ibb.co.com/RNYDwGh/product-image.png" alt="">
+                        </div>
+                        <div class="w-full bg-white p-4 space-y-2 rounded-b-3xl">
+                            <h3 class="text-xl text-[#192434] font-semibold">White comfort Hoodie</h3>
+                            <p class="text-base text-[#1B2B41B0] text-lg">Menswear, Hoodie</p>
+                            <div class="flex gap-2 py-2">
+                                <h2 class="text-xl font-bold">60.00$</h2>
+                                <h2 class="text-base text-[#c4cbd3] font-bold line-through">72.00$</h2>
+                            </div>
+                            <div class="flex gap-2 pt-3">
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">S</div>
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">M</div>
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">L</div>
+                            </div>
+                            <div class="flex items-center pt-2">
+                                <p class="text-lg font-semibold text-[#192434] pr-4">Color</p>
+                                <p class="px-4 border-l-2 border-[#c4cbd3] text-[#1B2B41B0] text-lg">Daisy White</p>
+                            </div>
+                            <ul class="flex gap-2 pt-2 pb-2">
+                                <li class="w-6 h-6 bg-[#eaf0fa] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#EEEFAE] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#EEB1A4] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#9AEBE6] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#A1C5EF] rounded-full"></li>
+                            </ul>
+                            <div class="h-48 overflow-y-auto text-[#616d7c] text-base">
+                                <p>The Trainer jacket features a combination of knitted arms, back, and a ribbed funnel neckline, complemented by a quilted front panel that enhances its versatility.</p>
+                                <ul class="space-y-2 my-2">
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Hybrid construction of quilt and knit</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Funnel neckline design</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Long-sleeved</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Zip-front fastening</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Side-slip pockets for added convenience</span></li>
+                                </ul>
+                                <p>The model is showcasing a size M. Model's measurements: 6ft 2''/188cm.</p>
+                            </div>
+                            <button class="w-full bg-[#ebecf0] py-3 rounded-full text-[#192434] border border-[#d2d4d9] hover:bg-[#192434] hover:text-[#ebecf0] font-semibold">ADD TO BAG</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-4 p-6 md:pt-10 rounded-3xl bg-white">
+                        <div class="w-full md:w-[520px] lg:w-[695px] h-full">
+                            <img class="w-full h-full rounded-3xl object-cover" src="https://i.ibb.co.com/RNYDwGh/product-image.png" alt="">
+                        </div>
+                        <div class="w-full bg-white p-4 space-y-2 rounded-b-3xl">
+                            <h3 class="text-xl text-[#192434] font-semibold">White comfort Hoodie</h3>
+                            <p class="text-base text-[#1B2B41B0] text-lg">Menswear, Hoodie</p>
+                            <div class="flex gap-2 py-2">
+                                <h2 class="text-xl font-bold">60.00$</h2>
+                                <h2 class="text-base text-[#c4cbd3] font-bold line-through">72.00$</h2>
+                            </div>
+                            <div class="flex gap-2 pt-3">
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">S</div>
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">M</div>
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">L</div>
+                            </div>
+                            <div class="flex items-center pt-2">
+                                <p class="text-lg font-semibold text-[#192434] pr-4">Color</p>
+                                <p class="px-4 border-l-2 border-[#c4cbd3] text-[#1B2B41B0] text-lg">Daisy White</p>
+                            </div>
+                            <ul class="flex gap-2 pt-2 pb-2">
+                                <li class="w-6 h-6 bg-[#eaf0fa] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#EEEFAE] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#EEB1A4] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#9AEBE6] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#A1C5EF] rounded-full"></li>
+                            </ul>
+                            <div class="h-48 overflow-y-auto text-[#616d7c] text-base">
+                                <p>The Trainer jacket features a combination of knitted arms, back, and a ribbed funnel neckline, complemented by a quilted front panel that enhances its versatility.</p>
+                                <ul class="space-y-2 my-2">
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Hybrid construction of quilt and knit</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Funnel neckline design</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Long-sleeved</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Zip-front fastening</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Side-slip pockets for added convenience</span></li>
+                                </ul>
+                                <p>The model is showcasing a size M. Model's measurements: 6ft 2''/188cm.</p>
+                            </div>
+                            <button class="w-full bg-[#ebecf0] py-3 rounded-full text-[#192434] border border-[#d2d4d9] hover:bg-[#192434] hover:text-[#ebecf0] font-semibold">ADD TO BAG</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-4 p-6 md:pt-10 rounded-3xl bg-white">
+                        <div class="w-full md:w-[520px] lg:w-[695px] h-full">
+                            <img class="w-full h-full rounded-3xl object-cover" src="https://i.ibb.co.com/RNYDwGh/product-image.png" alt="">
+                        </div>
+                        <div class="w-full bg-white p-4 space-y-2 rounded-b-3xl">
+                            <h3 class="text-xl text-[#192434] font-semibold">White comfort Hoodie</h3>
+                            <p class="text-base text-[#1B2B41B0] text-lg">Menswear, Hoodie</p>
+                            <div class="flex gap-2 py-2">
+                                <h2 class="text-xl font-bold">60.00$</h2>
+                                <h2 class="text-base text-[#c4cbd3] font-bold line-through">72.00$</h2>
+                            </div>
+                            <div class="flex gap-2 pt-3">
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">S</div>
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">M</div>
+                                <div class="w-16 text-center text-xl text-[#192434] border-2 border-[#c4cbd3] py-1 px-4 hover:bg-[#192434] hover:text-white cursor-pointer rounded">L</div>
+                            </div>
+                            <div class="flex items-center pt-2">
+                                <p class="text-lg font-semibold text-[#192434] pr-4">Color</p>
+                                <p class="px-4 border-l-2 border-[#c4cbd3] text-[#1B2B41B0] text-lg">Daisy White</p>
+                            </div>
+                            <ul class="flex gap-2 pt-2 pb-2">
+                                <li class="w-6 h-6 bg-[#eaf0fa] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#EEEFAE] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#EEB1A4] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#9AEBE6] rounded-full"></li>
+                                <li class="w-6 h-6 bg-[#A1C5EF] rounded-full"></li>
+                            </ul>
+                            <div class="h-48 overflow-y-auto text-[#616d7c] text-base">
+                                <p>The Trainer jacket features a combination of knitted arms, back, and a ribbed funnel neckline, complemented by a quilted front panel that enhances its versatility.</p>
+                                <ul class="space-y-2 my-2">
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Hybrid construction of quilt and knit</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Funnel neckline design</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Long-sleeved</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Zip-front fastening</span></li>
+                                    <li class="flex items-center gap-2"><img class="w-3" src="https://i.ibb.co.com/pyTyywf/right-arrow.png" alt=""> <span>Side-slip pockets for added convenience</span></li>
+                                </ul>
+                                <p>The model is showcasing a size M. Model's measurements: 6ft 2''/188cm.</p>
+                            </div>
+                            <button class="w-full bg-[#ebecf0] py-3 rounded-full text-[#192434] border border-[#d2d4d9] hover:bg-[#192434] hover:text-[#ebecf0] font-semibold">ADD TO BAG</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center space-y-4">
+                    <h6>Showing 06 of 15 iteams</h6>
+                    <div class="w-[280px] mx-auto border-b-4 border-[#dfe1e6]"></div>
+                    <button class="px-16 py-3 text-md bg-[#192434] text-lg border-2 border-[#192434] hover:bg-white hover:text-[#192434] transition duration-200 text-white rounded-full">Learn More</button>
+                </div>
+            </div>
+
+            <!-- responsive slide bar -->
+            <!-- left contents -->
+            <div id="responsive_bar" class="hidden bg-white w-[100%] md:w-[400px] p-8 rounded-2xl absolute z-3">
+                <!-- responsive icon -->
+                <div class="mb-4 flex justify-end items-end">
+                    <img id="close_slide_bar" class="w-14 cursor-pointer" src="https://i.ibb.co/xg6K2TK/close.png" alt="">
+                </div>
+                <!-- Product Type -->
+                <div class="flex justify-between items-center text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Product Type</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <input class="border-2 border-[#d6dce1] text-[#d6dce1] w-full p-4 rounded-xl my-8 text-lg" type="text"
+                    placeholder="Find a category">
+                <div class="space-y-4 max-h-60 overflow-y-auto pb-2 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Accessories (21)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Bags (49)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Goods (47)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Pants (16)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Shoes (33)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Sweaters (19)</p>
+                    </div>
+                </div>
+                <!-- Price -->
+                <div class="flex justify-between mt-14 mb-4 items-center text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Price</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <input type="range" class="w-full" min="0" max="100">
+                <div class="flex justify-between border-b-4 border-[#d6dce1] pt-4 pb-6">
+                    <input class="w-[42%] border border-[#d6dce1] p-2 rounded text-base font-semibold" type="number"
+                        name="" id="" placeholder="0">
+                    <span class="text-[#192434] text-lg">To</span>
+                    <input class="w-[42%] border border-[#d6dce1] p-2 rounded text-base font-semibold" type="number"
+                        name="" id="" placeholder="3000">
+                </div>
+                <!-- Size -->
+                <div class="flex justify-between items-center mt-10 mb-2 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Size</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <div class="space-y-4 pb-6 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">S (86)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">M (33)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">L (37)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">XL (29)</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">XXL (32)</p>
+                    </div>
+                </div>
+                <!-- Product Status -->
+                <div class="flex justify-between items-center mt-10 mb-2 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Product Status</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <div class="space-y-4 pb-6 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">In stock</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">Out of stock</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <p class="text-lg text-[#192434]">On sale</p>
+                    </div>
+                </div>
+                <!-- Average Ratings -->
+                <div class="flex justify-between items-center mt-10 mb-2 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Average Ratings</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <div class="space-y-4 pb-6 border-b-4 border-[#d6dce1]">
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <div class="flex items-center gap-2">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <span class="pl-4 text-lg">5</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span class="border-4 border-[#d6dce1] p-2 rounded"></span>
+                        <div class="flex items-center gap-2">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/hB1wfT5/shop-page-13.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/T8ymnKp/shop-page-12.png" alt="">
+                            <img class="w-6" src="https://i.ibb.co.com/T8ymnKp/shop-page-12.png" alt="">
+                            <span class="pl-4 text-lg">3 & up</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Brand -->
+                <div class="flex justify-between items-center mt-10 text-[#192434]">
+                    <h3 class="text-2xl font-semibold">Brand</h3>
+                    <img class="w-[40px]" src="https://i.ibb.co.com/fx7ZMj9/shop-page-3.png" alt="">
+                </div>
+                <input class="border-2 border-[#d6dce1] text-[#d6dce1] w-full p-4 mt-2 rounded-xl text-lg" type="text"
+                    placeholder="Find a category">
+                <img class="mt-6" src="https://i.ibb.co.com/DYCQFXD/shop-page-10.png" alt="">
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
